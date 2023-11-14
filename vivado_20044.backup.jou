@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb 21 16:57:59 2022
+# Process ID: 20044
+# Current directory: C:/Users/shrey/Desktop/AES_SV
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27432 C:\Users\shrey\Desktop\AES_SV\AES_SV.xpr
+# Log file: C:/Users/shrey/Desktop/AES_SV/vivado.log
+# Journal file: C:/Users/shrey/Desktop/AES_SV\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/shrey/Desktop/AES_SV/AES_SV.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source aes_test_bench.tcl
+close_sim
+launch_simulation
+source aes_test_bench.tcl
+restart
+run all
+restart
+run all
+restart
+run all
+restart
+run all
+restart
+run all
+close_sim
+launch_simulation
+source aes_test_bench.tcl
+close_sim
+launch_simulation
+source aes_test_bench.tcl
+close_sim
+launch_simulation
+source aes_test_bench.tcl
+reset_run synth_2
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2
+open_run synth_2 -name synth_2
+report_utilization -name utilization_1
+synth_design -rtl -name rtl_1
+close_sim
+launch_simulation
+source aes_test_bench.tcl
+run all
+run all
+close_sim
+launch_simulation
+source aes_test_bench.tcl
+clear
+clc
+cls
+close_sim
+launch_simulation
+source aes_test_bench.tcl
+run all
+restart
+run all
+restart
+run all
+close_sim
+launch_simulation
+source aes_test_bench.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source aes_test_bench.tcl
+current_design synth_2
+report_utilization -name utilization_2
+reset_run synth_2
+launch_runs synth_2 -jobs 8
+wait_on_run synth_2

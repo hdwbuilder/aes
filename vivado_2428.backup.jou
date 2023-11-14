@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Feb 20 15:22:48 2022
+# Process ID: 2428
+# Current directory: C:/Users/shrey/Desktop/AES_SV
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2452 C:\Users\shrey\Desktop\AES_SV\AES_SV.xpr
+# Log file: C:/Users/shrey/Desktop/AES_SV/vivado.log
+# Journal file: C:/Users/shrey/Desktop/AES_SV\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/shrey/Desktop/AES_SV/AES_SV.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation

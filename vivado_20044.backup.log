@@ -1,0 +1,1177 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb 21 16:57:59 2022
+# Process ID: 20044
+# Current directory: C:/Users/shrey/Desktop/AES_SV
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27432 C:\Users\shrey\Desktop\AES_SV\AES_SV.xpr
+# Log file: C:/Users/shrey/Desktop/AES_SV/vivado.log
+# Journal file: C:/Users/shrey/Desktop/AES_SV\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/shrey/Desktop/AES_SV/AES_SV.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'aes_test_bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj aes_test_bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_main
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'encrypt_done' is not allowed [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_expansion
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mixcolumn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mixcolumn_enc
+INFO: [VRFC 10-311] analyzing module mixcolumn_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul11_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul11_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul13_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul13_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul14_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul14_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul2_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul2_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul3_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul3_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul9_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul9_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module enc_rounds
+INFO: [VRFC 10-311] analyzing module enc_last_round
+INFO: [VRFC 10-311] analyzing module dec_first_round
+INFO: [VRFC 10-311] analyzing module dec_rounds
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/sbox.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox
+INFO: [VRFC 10-311] analyzing module sboxi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/shiftrow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftrow_enc
+INFO: [VRFC 10-311] analyzing module shiftrow_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/subbytes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subbytes_enc
+INFO: [VRFC 10-311] analyzing module subbytes_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_test_bench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 74bf728c8c944b209bcc72d1580fdc17 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot aes_test_bench_behav xil_defaultlib.aes_test_bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sbox
+Compiling module xil_defaultlib.key_expansion
+Compiling module xil_defaultlib.subbytes_enc
+Compiling module xil_defaultlib.shiftrow_enc
+Compiling module xil_defaultlib.mul2_lut
+Compiling module xil_defaultlib.mul3_lut
+Compiling module xil_defaultlib.mixcolumn_enc
+Compiling module xil_defaultlib.enc_rounds
+Compiling module xil_defaultlib.enc_last_round
+Compiling module xil_defaultlib.sboxi
+Compiling module xil_defaultlib.subbytes_dec
+Compiling module xil_defaultlib.shiftrow_dec
+Compiling module xil_defaultlib.dec_first_round
+Compiling module xil_defaultlib.mul9_lut
+Compiling module xil_defaultlib.mul11_lut
+Compiling module xil_defaultlib.mul14_lut
+Compiling module xil_defaultlib.mul13_lut
+Compiling module xil_defaultlib.mixcolumn_dec
+Compiling module xil_defaultlib.dec_rounds
+Compiling module xil_defaultlib.aes_main
+Compiling module xil_defaultlib.aes_test_bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot aes_test_bench_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim/xsim.dir/aes_test_bench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Feb 21 16:58:51 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "aes_test_bench_behav -key {Behavioral:sim_1:Functional:aes_test_bench} -tclbatch {aes_test_bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source aes_test_bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_test_bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 803.773 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'aes_test_bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj aes_test_bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_main
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'encrypt_done' is not allowed [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_expansion
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mixcolumn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mixcolumn_enc
+INFO: [VRFC 10-311] analyzing module mixcolumn_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul11_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul11_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul13_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul13_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul14_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul14_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul2_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul2_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul3_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul3_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul9_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul9_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module enc_rounds
+INFO: [VRFC 10-311] analyzing module enc_last_round
+INFO: [VRFC 10-311] analyzing module dec_first_round
+INFO: [VRFC 10-311] analyzing module dec_rounds
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/sbox.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox
+INFO: [VRFC 10-311] analyzing module sboxi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/shiftrow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftrow_enc
+INFO: [VRFC 10-311] analyzing module shiftrow_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/subbytes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subbytes_enc
+INFO: [VRFC 10-311] analyzing module subbytes_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_test_bench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 74bf728c8c944b209bcc72d1580fdc17 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot aes_test_bench_behav xil_defaultlib.aes_test_bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sbox
+Compiling module xil_defaultlib.key_expansion
+Compiling module xil_defaultlib.subbytes_enc
+Compiling module xil_defaultlib.shiftrow_enc
+Compiling module xil_defaultlib.mul2_lut
+Compiling module xil_defaultlib.mul3_lut
+Compiling module xil_defaultlib.mixcolumn_enc
+Compiling module xil_defaultlib.enc_rounds
+Compiling module xil_defaultlib.enc_last_round
+Compiling module xil_defaultlib.sboxi
+Compiling module xil_defaultlib.subbytes_dec
+Compiling module xil_defaultlib.shiftrow_dec
+Compiling module xil_defaultlib.dec_first_round
+Compiling module xil_defaultlib.mul9_lut
+Compiling module xil_defaultlib.mul11_lut
+Compiling module xil_defaultlib.mul14_lut
+Compiling module xil_defaultlib.mul13_lut
+Compiling module xil_defaultlib.mixcolumn_dec
+Compiling module xil_defaultlib.dec_rounds
+Compiling module xil_defaultlib.aes_main
+Compiling module xil_defaultlib.aes_test_bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot aes_test_bench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "aes_test_bench_behav -key {Behavioral:sim_1:Functional:aes_test_bench} -tclbatch {aes_test_bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source aes_test_bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_test_bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 811.695 ; gain = 4.238
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Incorrect Encryption 
+Incorrect Decryption 
+Encryption & Decryption are successful!!
+$finish called at time : 2170 ns : File "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" Line 105
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Incorrect Encryption 
+Incorrect Decryption 
+Encryption & Decryption are successful!!
+$finish called at time : 2170 ns : File "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" Line 105
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Incorrect Encryption 
+Incorrect Decryption 
+Encryption & Decryption are successful!!
+$finish called at time : 2170 ns : File "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" Line 105
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Incorrect Encryption 
+Incorrect Decryption 
+Encryption & Decryption are successful!!
+$finish called at time : 2170 ns : File "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" Line 105
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Incorrect Encryption 
+Incorrect Decryption 
+Encryption & Decryption are successful!!
+$finish called at time : 2170 ns : File "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" Line 105
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'aes_test_bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj aes_test_bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_main
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'encrypt_done' is not allowed [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_expansion
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mixcolumn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mixcolumn_enc
+INFO: [VRFC 10-311] analyzing module mixcolumn_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul11_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul11_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul13_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul13_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul14_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul14_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul2_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul2_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul3_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul3_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul9_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul9_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module enc_rounds
+INFO: [VRFC 10-311] analyzing module enc_last_round
+INFO: [VRFC 10-311] analyzing module dec_first_round
+INFO: [VRFC 10-311] analyzing module dec_rounds
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/sbox.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox
+INFO: [VRFC 10-311] analyzing module sboxi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/shiftrow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftrow_enc
+INFO: [VRFC 10-311] analyzing module shiftrow_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/subbytes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subbytes_enc
+INFO: [VRFC 10-311] analyzing module subbytes_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_test_bench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 74bf728c8c944b209bcc72d1580fdc17 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot aes_test_bench_behav xil_defaultlib.aes_test_bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sbox
+Compiling module xil_defaultlib.key_expansion
+Compiling module xil_defaultlib.subbytes_enc
+Compiling module xil_defaultlib.shiftrow_enc
+Compiling module xil_defaultlib.mul2_lut
+Compiling module xil_defaultlib.mul3_lut
+Compiling module xil_defaultlib.mixcolumn_enc
+Compiling module xil_defaultlib.enc_rounds
+Compiling module xil_defaultlib.enc_last_round
+Compiling module xil_defaultlib.sboxi
+Compiling module xil_defaultlib.subbytes_dec
+Compiling module xil_defaultlib.shiftrow_dec
+Compiling module xil_defaultlib.dec_first_round
+Compiling module xil_defaultlib.mul9_lut
+Compiling module xil_defaultlib.mul11_lut
+Compiling module xil_defaultlib.mul14_lut
+Compiling module xil_defaultlib.mul13_lut
+Compiling module xil_defaultlib.mixcolumn_dec
+Compiling module xil_defaultlib.dec_rounds
+Compiling module xil_defaultlib.aes_main
+Compiling module xil_defaultlib.aes_test_bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot aes_test_bench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "aes_test_bench_behav -key {Behavioral:sim_1:Functional:aes_test_bench} -tclbatch {aes_test_bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source aes_test_bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_test_bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 822.914 ; gain = 4.246
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'aes_test_bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj aes_test_bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_main
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'encrypt_done' is not allowed [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_expansion
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mixcolumn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mixcolumn_enc
+INFO: [VRFC 10-311] analyzing module mixcolumn_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul11_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul11_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul13_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul13_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul14_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul14_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul2_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul2_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul3_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul3_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul9_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul9_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module enc_rounds
+INFO: [VRFC 10-311] analyzing module enc_last_round
+INFO: [VRFC 10-311] analyzing module dec_first_round
+INFO: [VRFC 10-311] analyzing module dec_rounds
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/sbox.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox
+INFO: [VRFC 10-311] analyzing module sboxi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/shiftrow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftrow_enc
+INFO: [VRFC 10-311] analyzing module shiftrow_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/subbytes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subbytes_enc
+INFO: [VRFC 10-311] analyzing module subbytes_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_test_bench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 74bf728c8c944b209bcc72d1580fdc17 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot aes_test_bench_behav xil_defaultlib.aes_test_bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sbox
+Compiling module xil_defaultlib.key_expansion
+Compiling module xil_defaultlib.subbytes_enc
+Compiling module xil_defaultlib.shiftrow_enc
+Compiling module xil_defaultlib.mul2_lut
+Compiling module xil_defaultlib.mul3_lut
+Compiling module xil_defaultlib.mixcolumn_enc
+Compiling module xil_defaultlib.enc_rounds
+Compiling module xil_defaultlib.enc_last_round
+Compiling module xil_defaultlib.sboxi
+Compiling module xil_defaultlib.subbytes_dec
+Compiling module xil_defaultlib.shiftrow_dec
+Compiling module xil_defaultlib.dec_first_round
+Compiling module xil_defaultlib.mul9_lut
+Compiling module xil_defaultlib.mul11_lut
+Compiling module xil_defaultlib.mul14_lut
+Compiling module xil_defaultlib.mul13_lut
+Compiling module xil_defaultlib.mixcolumn_dec
+Compiling module xil_defaultlib.dec_rounds
+Compiling module xil_defaultlib.aes_main
+Compiling module xil_defaultlib.aes_test_bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot aes_test_bench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "aes_test_bench_behav -key {Behavioral:sim_1:Functional:aes_test_bench} -tclbatch {aes_test_bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source aes_test_bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Incorrect Encryption 
+Incorrect Decryption 
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_test_bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 827.453 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'aes_test_bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj aes_test_bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_main
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'encrypt_done' is not allowed [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_expansion
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mixcolumn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mixcolumn_enc
+INFO: [VRFC 10-311] analyzing module mixcolumn_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul11_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul11_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul13_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul13_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul14_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul14_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul2_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul2_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul3_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul3_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul9_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul9_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module enc_rounds
+INFO: [VRFC 10-311] analyzing module enc_last_round
+INFO: [VRFC 10-311] analyzing module dec_first_round
+INFO: [VRFC 10-311] analyzing module dec_rounds
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/sbox.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox
+INFO: [VRFC 10-311] analyzing module sboxi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/shiftrow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftrow_enc
+INFO: [VRFC 10-311] analyzing module shiftrow_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/subbytes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subbytes_enc
+INFO: [VRFC 10-311] analyzing module subbytes_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_test_bench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 74bf728c8c944b209bcc72d1580fdc17 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot aes_test_bench_behav xil_defaultlib.aes_test_bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sbox
+Compiling module xil_defaultlib.key_expansion
+Compiling module xil_defaultlib.subbytes_enc
+Compiling module xil_defaultlib.shiftrow_enc
+Compiling module xil_defaultlib.mul2_lut
+Compiling module xil_defaultlib.mul3_lut
+Compiling module xil_defaultlib.mixcolumn_enc
+Compiling module xil_defaultlib.enc_rounds
+Compiling module xil_defaultlib.enc_last_round
+Compiling module xil_defaultlib.sboxi
+Compiling module xil_defaultlib.subbytes_dec
+Compiling module xil_defaultlib.shiftrow_dec
+Compiling module xil_defaultlib.dec_first_round
+Compiling module xil_defaultlib.mul9_lut
+Compiling module xil_defaultlib.mul11_lut
+Compiling module xil_defaultlib.mul14_lut
+Compiling module xil_defaultlib.mul13_lut
+Compiling module xil_defaultlib.mixcolumn_dec
+Compiling module xil_defaultlib.dec_rounds
+Compiling module xil_defaultlib.aes_main
+Compiling module xil_defaultlib.aes_test_bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot aes_test_bench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "aes_test_bench_behav -key {Behavioral:sim_1:Functional:aes_test_bench} -tclbatch {aes_test_bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source aes_test_bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_test_bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 827.453 ; gain = 0.000
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/shrey/Desktop/AES_SV/AES_SV.runs/synth_2
+
+launch_runs synth_2 -jobs 8
+[Mon Feb 21 18:05:05 2022] Launched synth_2...
+Run output will be captured here: C:/Users/shrey/Desktop/AES_SV/AES_SV.runs/synth_2/runme.log
+open_run synth_2 -name synth_2
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbv676-1
+INFO: [Netlist 29-17] Analyzing 1021 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a200tfbv676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1161.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1338.367 ; gain = 502.953
+report_utilization -name utilization_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a200tfbv676-1
+Top: aes_main
+WARNING: [Synth 8-2611] redeclaration of ansi port encrypt_done is not allowed [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:32]
+WARNING: [Synth 8-2611] redeclaration of ansi port decrypt_done is not allowed [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:32]
+WARNING: [Synth 8-976] encrypt_done has already been declared [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:32]
+WARNING: [Synth 8-2654] second declaration of encrypt_done ignored [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:32]
+INFO: [Synth 8-994] encrypt_done is declared here [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:27]
+INFO: [Synth 8-994] decrypt_done is declared here [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:28]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1856.914 ; gain = 70.957
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'aes_main' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:90]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:177]
+INFO: [Synth 8-6157] synthesizing module 'key_expansion' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v:23]
+WARNING: [Synth 8-6104] Input port 'rcon_indx' has an internal driver [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v:60]
+WARNING: [Synth 8-6104] Input port 'rcon_indx' has an internal driver [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v:60]
+WARNING: [Synth 8-6104] Input port 'rcon_indx' has an internal driver [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v:60]
+WARNING: [Synth 8-6104] Input port 'rcon_indx' has an internal driver [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v:60]
+INFO: [Synth 8-6157] synthesizing module 'sbox' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/sbox.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sbox' (1#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/sbox.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'key_expansion' (2#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v:23]
+INFO: [Synth 8-6157] synthesizing module 'enc_rounds' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v:22]
+INFO: [Synth 8-6157] synthesizing module 'subbytes_enc' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/subbytes.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'subbytes_enc' (3#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/subbytes.v:3]
+INFO: [Synth 8-6157] synthesizing module 'shiftrow_enc' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/shiftrow.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'shiftrow_enc' (4#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/shiftrow.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mixcolumn_enc' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mixcolumn.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mul2_lut' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul2_lut.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'mul2_lut' (5#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul2_lut.v:24]
+INFO: [Synth 8-6157] synthesizing module 'mul3_lut' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul3_lut.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'mul3_lut' (6#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul3_lut.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'mixcolumn_enc' (7#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mixcolumn.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'enc_rounds' (8#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v:22]
+INFO: [Synth 8-6157] synthesizing module 'enc_last_round' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'enc_last_round' (9#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v:36]
+INFO: [Synth 8-6157] synthesizing module 'dec_first_round' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v:49]
+INFO: [Synth 8-6157] synthesizing module 'subbytes_dec' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/subbytes.v:30]
+INFO: [Synth 8-6157] synthesizing module 'sboxi' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/sbox.v:275]
+INFO: [Synth 8-6155] done synthesizing module 'sboxi' (10#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/sbox.v:275]
+INFO: [Synth 8-6155] done synthesizing module 'subbytes_dec' (11#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/subbytes.v:30]
+INFO: [Synth 8-6157] synthesizing module 'shiftrow_dec' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/shiftrow.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'shiftrow_dec' (12#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/shiftrow.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'dec_first_round' (13#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v:49]
+INFO: [Synth 8-6157] synthesizing module 'dec_rounds' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v:63]
+INFO: [Synth 8-6157] synthesizing module 'mixcolumn_dec' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mixcolumn.v:71]
+INFO: [Synth 8-6157] synthesizing module 'mul9_lut' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul9_lut.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mul9_lut' (14#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul9_lut.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mul11_lut' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul11_lut.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mul11_lut' (15#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul11_lut.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mul14_lut' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul14_lut.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mul14_lut' (16#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul14_lut.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mul13_lut' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul13_lut.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mul13_lut' (17#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul13_lut.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mixcolumn_dec' (18#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mixcolumn.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'dec_rounds' (19#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'aes_main' (20#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:23]
+WARNING: [Synth 8-3917] design aes_main has port encrypt_done driven by constant 0
+WARNING: [Synth 8-3917] design aes_main has port decrypt_done driven by constant 0
+WARNING: [Synth 8-3331] design dec_rounds has unconnected port clk
+WARNING: [Synth 8-3331] design dec_first_round has unconnected port clk
+WARNING: [Synth 8-3331] design enc_last_round has unconnected port clk
+WARNING: [Synth 8-3331] design enc_rounds has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1909.617 ; gain = 123.660
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1909.617 ; gain = 123.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1909.617 ; gain = 123.660
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2062.055 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2084.102 ; gain = 298.145
+48 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2084.102 ; gain = 298.145
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'aes_test_bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj aes_test_bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_main
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'encrypt_done' is not allowed [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_expansion
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mixcolumn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mixcolumn_enc
+INFO: [VRFC 10-311] analyzing module mixcolumn_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul11_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul11_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul13_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul13_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul14_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul14_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul2_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul2_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul3_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul3_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul9_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul9_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module enc_rounds
+INFO: [VRFC 10-311] analyzing module enc_last_round
+INFO: [VRFC 10-311] analyzing module dec_first_round
+INFO: [VRFC 10-311] analyzing module dec_rounds
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/sbox.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox
+INFO: [VRFC 10-311] analyzing module sboxi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/shiftrow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftrow_enc
+INFO: [VRFC 10-311] analyzing module shiftrow_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/subbytes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subbytes_enc
+INFO: [VRFC 10-311] analyzing module subbytes_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_test_bench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 74bf728c8c944b209bcc72d1580fdc17 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot aes_test_bench_behav xil_defaultlib.aes_test_bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sbox
+Compiling module xil_defaultlib.key_expansion
+Compiling module xil_defaultlib.subbytes_enc
+Compiling module xil_defaultlib.shiftrow_enc
+Compiling module xil_defaultlib.mul2_lut
+Compiling module xil_defaultlib.mul3_lut
+Compiling module xil_defaultlib.mixcolumn_enc
+Compiling module xil_defaultlib.enc_rounds
+Compiling module xil_defaultlib.enc_last_round
+Compiling module xil_defaultlib.sboxi
+Compiling module xil_defaultlib.subbytes_dec
+Compiling module xil_defaultlib.shiftrow_dec
+Compiling module xil_defaultlib.dec_first_round
+Compiling module xil_defaultlib.mul9_lut
+Compiling module xil_defaultlib.mul11_lut
+Compiling module xil_defaultlib.mul14_lut
+Compiling module xil_defaultlib.mul13_lut
+Compiling module xil_defaultlib.mixcolumn_dec
+Compiling module xil_defaultlib.dec_rounds
+Compiling module xil_defaultlib.aes_main
+Compiling module xil_defaultlib.aes_test_bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot aes_test_bench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "aes_test_bench_behav -key {Behavioral:sim_1:Functional:aes_test_bench} -tclbatch {aes_test_bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source aes_test_bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_test_bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2131.023 ; gain = 0.000
+run all
+Incorrect Encryption 
+Incorrect Decryption 
+Encryption & Decryption are successful!!
+$finish called at time : 1660 ns : File "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" Line 98
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'aes_test_bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj aes_test_bench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 74bf728c8c944b209bcc72d1580fdc17 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot aes_test_bench_behav xil_defaultlib.aes_test_bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "aes_test_bench_behav -key {Behavioral:sim_1:Functional:aes_test_bench} -tclbatch {aes_test_bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source aes_test_bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_test_bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2131.023 ; gain = 0.000
+clear
+invalid command name "clear"
+clc
+invalid command name "clc"
+cls
+WARNING: [Common 17-259] Unknown Tcl command 'cls' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'aes_test_bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj aes_test_bench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 74bf728c8c944b209bcc72d1580fdc17 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot aes_test_bench_behav xil_defaultlib.aes_test_bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "aes_test_bench_behav -key {Behavioral:sim_1:Functional:aes_test_bench} -tclbatch {aes_test_bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source aes_test_bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_test_bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2131.652 ; gain = 0.629
+run all
+Incorrect Encryption 
+Incorrect Decryption 
+Encryption & Decryption are successful!!
+$finish called at time : 1660 ns : File "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" Line 98
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Incorrect Encryption 
+Incorrect Decryption 
+Encryption & Decryption are successful!!
+$finish called at time : 1660 ns : File "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" Line 98
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Incorrect Encryption 
+Incorrect Decryption 
+Encryption & Decryption are successful!!
+$finish called at time : 1660 ns : File "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" Line 98
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'aes_test_bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj aes_test_bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_main
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'encrypt_done' is not allowed [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_expansion
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mixcolumn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mixcolumn_enc
+INFO: [VRFC 10-311] analyzing module mixcolumn_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul11_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul11_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul13_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul13_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul14_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul14_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul2_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul2_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul3_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul3_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul9_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul9_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module enc_rounds
+INFO: [VRFC 10-311] analyzing module enc_last_round
+INFO: [VRFC 10-311] analyzing module dec_first_round
+INFO: [VRFC 10-311] analyzing module dec_rounds
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/sbox.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox
+INFO: [VRFC 10-311] analyzing module sboxi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/shiftrow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftrow_enc
+INFO: [VRFC 10-311] analyzing module shiftrow_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/subbytes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subbytes_enc
+INFO: [VRFC 10-311] analyzing module subbytes_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_test_bench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 74bf728c8c944b209bcc72d1580fdc17 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot aes_test_bench_behav xil_defaultlib.aes_test_bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sbox
+Compiling module xil_defaultlib.key_expansion
+Compiling module xil_defaultlib.subbytes_enc
+Compiling module xil_defaultlib.shiftrow_enc
+Compiling module xil_defaultlib.mul2_lut
+Compiling module xil_defaultlib.mul3_lut
+Compiling module xil_defaultlib.mixcolumn_enc
+Compiling module xil_defaultlib.enc_rounds
+Compiling module xil_defaultlib.enc_last_round
+Compiling module xil_defaultlib.sboxi
+Compiling module xil_defaultlib.subbytes_dec
+Compiling module xil_defaultlib.shiftrow_dec
+Compiling module xil_defaultlib.dec_first_round
+Compiling module xil_defaultlib.mul9_lut
+Compiling module xil_defaultlib.mul11_lut
+Compiling module xil_defaultlib.mul14_lut
+Compiling module xil_defaultlib.mul13_lut
+Compiling module xil_defaultlib.mixcolumn_dec
+Compiling module xil_defaultlib.dec_rounds
+Compiling module xil_defaultlib.aes_main
+Compiling module xil_defaultlib.aes_test_bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot aes_test_bench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "aes_test_bench_behav -key {Behavioral:sim_1:Functional:aes_test_bench} -tclbatch {aes_test_bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source aes_test_bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Encryption & Decryption are successful!!
+$finish called at time : 980 ns : File "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" Line 97
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_test_bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2132.781 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'aes_test_bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj aes_test_bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_main
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'encrypt_done' is not allowed [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_expansion
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mixcolumn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mixcolumn_enc
+INFO: [VRFC 10-311] analyzing module mixcolumn_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul11_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul11_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul13_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul13_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul14_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul14_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul2_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul2_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul3_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul3_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul9_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul9_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module enc_rounds
+INFO: [VRFC 10-311] analyzing module enc_last_round
+INFO: [VRFC 10-311] analyzing module dec_first_round
+INFO: [VRFC 10-311] analyzing module dec_rounds
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/sbox.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox
+INFO: [VRFC 10-311] analyzing module sboxi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/shiftrow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftrow_enc
+INFO: [VRFC 10-311] analyzing module shiftrow_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/subbytes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subbytes_enc
+INFO: [VRFC 10-311] analyzing module subbytes_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_test_bench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 74bf728c8c944b209bcc72d1580fdc17 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot aes_test_bench_behav xil_defaultlib.aes_test_bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sbox
+Compiling module xil_defaultlib.key_expansion
+Compiling module xil_defaultlib.subbytes_enc
+Compiling module xil_defaultlib.shiftrow_enc
+Compiling module xil_defaultlib.mul2_lut
+Compiling module xil_defaultlib.mul3_lut
+Compiling module xil_defaultlib.mixcolumn_enc
+Compiling module xil_defaultlib.enc_rounds
+Compiling module xil_defaultlib.enc_last_round
+Compiling module xil_defaultlib.sboxi
+Compiling module xil_defaultlib.subbytes_dec
+Compiling module xil_defaultlib.shiftrow_dec
+Compiling module xil_defaultlib.dec_first_round
+Compiling module xil_defaultlib.mul9_lut
+Compiling module xil_defaultlib.mul11_lut
+Compiling module xil_defaultlib.mul14_lut
+Compiling module xil_defaultlib.mul13_lut
+Compiling module xil_defaultlib.mixcolumn_dec
+Compiling module xil_defaultlib.dec_rounds
+Compiling module xil_defaultlib.aes_main
+Compiling module xil_defaultlib.aes_test_bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot aes_test_bench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Encryption & Decryption are successful!!
+$finish called at time : 980 ns : File "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" Line 97
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2132.781 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'aes_test_bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj aes_test_bench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 74bf728c8c944b209bcc72d1580fdc17 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot aes_test_bench_behav xil_defaultlib.aes_test_bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/shrey/Desktop/AES_SV/AES_SV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "aes_test_bench_behav -key {Behavioral:sim_1:Functional:aes_test_bench} -tclbatch {aes_test_bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source aes_test_bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Encryption & Decryption are successful!!
+$finish called at time : 980 ns : File "C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sim_1/AES_TB.v" Line 97
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2179.176 ; gain = 44.668
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'aes_test_bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 2179.176 ; gain = 44.668
+current_design synth_2
+report_utilization -name utilization_2
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'report_utilization' was cancelled
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/shrey/Desktop/AES_SV/AES_SV.runs/synth_2
+
+launch_runs synth_2 -jobs 8
+[Mon Feb 21 18:56:35 2022] Launched synth_2...
+Run output will be captured here: C:/Users/shrey/Desktop/AES_SV/AES_SV.runs/synth_2/runme.log

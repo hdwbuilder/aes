@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../AES_SV.srcs/sources_1/new/aes_main.v" \
+"../../../../AES_SV.srcs/sources_1/new/key_expansion.v" \
+"../../../../AES_SV.srcs/sources_1/new/mixcolumn.v" \
+"../../../../AES_SV.srcs/sources_1/new/mul11_lut.v" \
+"../../../../AES_SV.srcs/sources_1/new/mul13_lut.v" \
+"../../../../AES_SV.srcs/sources_1/new/mul14_lut.v" \
+"../../../../AES_SV.srcs/sources_1/new/mul2_lut.v" \
+"../../../../AES_SV.srcs/sources_1/new/mul3_lut.v" \
+"../../../../AES_SV.srcs/sources_1/new/mul9_lut.v" \
+"../../../../AES_SV.srcs/sources_1/new/rounds.v" \
+"../../../../AES_SV.srcs/sources_1/new/sbox.v" \
+"../../../../AES_SV.srcs/sources_1/new/shiftrow.v" \
+"../../../../AES_SV.srcs/sources_1/new/subbytes.v" \
+"../../../../AES_SV.srcs/sim_1/AES_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

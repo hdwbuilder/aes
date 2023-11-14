@@ -1,0 +1,844 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb 21 18:56:38 2022
+# Process ID: 24940
+# Current directory: C:/Users/shrey/Desktop/AES_SV/AES_SV.runs/synth_2
+# Command line: vivado.exe -log aes_main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source aes_main.tcl
+# Log file: C:/Users/shrey/Desktop/AES_SV/AES_SV.runs/synth_2/aes_main.vds
+# Journal file: C:/Users/shrey/Desktop/AES_SV/AES_SV.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source aes_main.tcl -notrace
+Command: synth_design -top aes_main -part xc7a200tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1112 
+WARNING: [Synth 8-2611] redeclaration of ansi port encrypt_done is not allowed [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:32]
+WARNING: [Synth 8-2611] redeclaration of ansi port decrypt_done is not allowed [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:32]
+WARNING: [Synth 8-976] encrypt_done has already been declared [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:32]
+WARNING: [Synth 8-2654] second declaration of encrypt_done ignored [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:32]
+INFO: [Synth 8-994] encrypt_done is declared here [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:27]
+INFO: [Synth 8-994] decrypt_done is declared here [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:28]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 377.219 ; gain = 115.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'aes_main' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:90]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:177]
+INFO: [Synth 8-6157] synthesizing module 'key_expansion' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v:23]
+WARNING: [Synth 8-6104] Input port 'rcon_indx' has an internal driver [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v:60]
+WARNING: [Synth 8-6104] Input port 'rcon_indx' has an internal driver [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v:60]
+WARNING: [Synth 8-6104] Input port 'rcon_indx' has an internal driver [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v:60]
+WARNING: [Synth 8-6104] Input port 'rcon_indx' has an internal driver [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v:60]
+INFO: [Synth 8-6157] synthesizing module 'sbox' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/sbox.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sbox' (1#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/sbox.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'key_expansion' (2#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/key_expansion.v:23]
+INFO: [Synth 8-6157] synthesizing module 'enc_rounds' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v:22]
+INFO: [Synth 8-6157] synthesizing module 'subbytes_enc' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/subbytes.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'subbytes_enc' (3#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/subbytes.v:3]
+INFO: [Synth 8-6157] synthesizing module 'shiftrow_enc' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/shiftrow.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'shiftrow_enc' (4#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/shiftrow.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mixcolumn_enc' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mixcolumn.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mul2_lut' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul2_lut.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'mul2_lut' (5#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul2_lut.v:24]
+INFO: [Synth 8-6157] synthesizing module 'mul3_lut' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul3_lut.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'mul3_lut' (6#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul3_lut.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'mixcolumn_enc' (7#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mixcolumn.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'enc_rounds' (8#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v:22]
+INFO: [Synth 8-6157] synthesizing module 'enc_last_round' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'enc_last_round' (9#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v:36]
+INFO: [Synth 8-6157] synthesizing module 'dec_first_round' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v:49]
+INFO: [Synth 8-6157] synthesizing module 'subbytes_dec' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/subbytes.v:30]
+INFO: [Synth 8-6157] synthesizing module 'sboxi' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/sbox.v:275]
+INFO: [Synth 8-6155] done synthesizing module 'sboxi' (10#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/sbox.v:275]
+INFO: [Synth 8-6155] done synthesizing module 'subbytes_dec' (11#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/subbytes.v:30]
+INFO: [Synth 8-6157] synthesizing module 'shiftrow_dec' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/shiftrow.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'shiftrow_dec' (12#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/shiftrow.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'dec_first_round' (13#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v:49]
+INFO: [Synth 8-6157] synthesizing module 'dec_rounds' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v:63]
+INFO: [Synth 8-6157] synthesizing module 'mixcolumn_dec' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mixcolumn.v:71]
+INFO: [Synth 8-6157] synthesizing module 'mul9_lut' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul9_lut.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mul9_lut' (14#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul9_lut.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mul11_lut' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul11_lut.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mul11_lut' (15#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul11_lut.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mul14_lut' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul14_lut.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mul14_lut' (16#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul14_lut.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mul13_lut' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul13_lut.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mul13_lut' (17#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mul13_lut.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mixcolumn_dec' (18#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/mixcolumn.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'dec_rounds' (19#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/rounds.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'aes_main' (20#1) [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:23]
+WARNING: [Synth 8-3331] design dec_rounds has unconnected port clk
+WARNING: [Synth 8-3331] design dec_first_round has unconnected port clk
+WARNING: [Synth 8-3331] design enc_last_round has unconnected port clk
+WARNING: [Synth 8-3331] design enc_rounds has unconnected port clk
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 421.703 ; gain = 159.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 421.703 ; gain = 159.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 421.703 ; gain = 159.766
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbv676-1
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'aes_main'
+INFO: [Synth 8-802] inferred FSM for state register 'i_reg' in module 'aes_main'
+INFO: [Synth 8-802] inferred FSM for state register 'v_reg' in module 'aes_main'
+INFO: [Synth 8-5545] ROM "expanded_keys_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "expanded_keys_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "expanded_keys_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "expanded_keys_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "expanded_keys_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "expanded_keys_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "expanded_keys_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "expanded_keys_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "expanded_keys_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "index" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "plain_text" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "key" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "j" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "buffer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "encrypt_done" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE6 |                             0000 |                            00000
+                 iSTATE4 |                             0001 |                            00001
+                 iSTATE3 |                             0010 |                            00010
+                 iSTATE2 |                             0011 |                            00011
+                iSTATE13 |                             0100 |                            00100
+                iSTATE12 |                             0101 |                            00101
+                 iSTATE9 |                             0110 |                            00110
+                 iSTATE8 |                             0111 |                            00111
+                iSTATE11 |                             1000 |                            01000
+                iSTATE10 |                             1001 |                            01001
+                 iSTATE7 |                             1010 |                            01010
+                 iSTATE5 |                             1011 |                            01011
+                 iSTATE1 |                             1100 |                            01100
+                 iSTATE0 |                             1101 |                            01101
+                  iSTATE |                             1110 |                            01110
+                iSTATE14 |                             1111 |                            01111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'v_reg' using encoding 'sequential' in module 'aes_main'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE6 |                             0000 |                            00000
+                 iSTATE4 |                             0001 |                            00001
+                 iSTATE3 |                             0010 |                            00010
+                 iSTATE2 |                             0011 |                            00011
+                iSTATE13 |                             0100 |                            00100
+                iSTATE12 |                             0101 |                            00101
+                 iSTATE9 |                             0110 |                            00110
+                 iSTATE8 |                             0111 |                            00111
+                iSTATE11 |                             1000 |                            01000
+                iSTATE10 |                             1001 |                            01001
+                 iSTATE7 |                             1010 |                            01010
+                 iSTATE5 |                             1011 |                            01011
+                 iSTATE1 |                             1100 |                            01100
+                 iSTATE0 |                             1101 |                            01101
+                  iSTATE |                             1110 |                            01110
+                iSTATE14 |                             1111 |                            01111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'i_reg' using encoding 'sequential' in module 'aes_main'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+*
+                 iSTATE0 |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'aes_main'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 532.016 ; gain = 270.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input    128 Bit         XORs := 6     
+	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 3     
+	   4 Input      8 Bit         XORs := 32    
++---Registers : 
+	              128 Bit    Registers := 16    
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  16 Input    128 Bit        Muxes := 2     
+	   3 Input    128 Bit        Muxes := 2     
+	   2 Input    128 Bit        Muxes := 3     
+	  16 Input      8 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 35    
+	  16 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 18    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module aes_main 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input    128 Bit         XORs := 2     
++---Registers : 
+	              128 Bit    Registers := 16    
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  16 Input    128 Bit        Muxes := 2     
+	   3 Input    128 Bit        Muxes := 2     
+	   2 Input    128 Bit        Muxes := 3     
+	  16 Input      8 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 35    
+	  16 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 18    
+Module key_expansion 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 3     
+Module mixcolumn_enc 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 16    
+Module enc_rounds 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module enc_last_round 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module dec_first_round 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module mixcolumn_dec 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 16    
+Module dec_rounds 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "key" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "plain_text" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "index" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "expanded_keys_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "expanded_keys_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "expanded_keys_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "expanded_keys_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "expanded_keys_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "expanded_keys_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "expanded_keys_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "expanded_keys_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "expanded_keys_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design dec_rounds has unconnected port clk
+WARNING: [Synth 8-3331] design dec_first_round has unconnected port clk
+WARNING: [Synth 8-3331] design enc_last_round has unconnected port clk
+WARNING: [Synth 8-3331] design enc_rounds has unconnected port clk
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_state_reg[0]) is unused and will be removed from module aes_main.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'decrypt_done_reg/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:164]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:164]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:164]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 792.637 ; gain = 530.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++----------------+-------------+---------------+----------------+
+|Module Name     | RTL Object  | Depth x Width | Implemented As | 
++----------------+-------------+---------------+----------------+
+|sbox            | out         | 256x8         | LUT            | 
+|mul2_lut        | out         | 256x8         | LUT            | 
+|mul3_lut        | out         | 256x8         | LUT            | 
+|sboxi           | out         | 256x8         | LUT            | 
+|mul9_lut        | out         | 256x8         | LUT            | 
+|mul11_lut       | out         | 256x8         | LUT            | 
+|mul14_lut       | out         | 256x8         | LUT            | 
+|mul13_lut       | out         | 256x8         | LUT            | 
+|key_expansion   | a4/out      | 256x8         | LUT            | 
+|key_expansion   | a3/out      | 256x8         | LUT            | 
+|key_expansion   | a2/out      | 256x8         | LUT            | 
+|key_expansion   | a1/out      | 256x8         | LUT            | 
+|enc_rounds      | t1/s0/out   | 256x8         | LUT            | 
+|enc_rounds      | t3/s0/out   | 256x8         | LUT            | 
+|enc_rounds      | t1/s16/out  | 256x8         | LUT            | 
+|enc_rounds      | t1/s14/out  | 256x8         | LUT            | 
+|enc_rounds      | t1/s13/out  | 256x8         | LUT            | 
+|enc_rounds      | t1/s12/out  | 256x8         | LUT            | 
+|enc_rounds      | t1/s11/out  | 256x8         | LUT            | 
+|enc_rounds      | t1/s10/out  | 256x8         | LUT            | 
+|enc_rounds      | t1/s9/out   | 256x8         | LUT            | 
+|enc_rounds      | t1/s8/out   | 256x8         | LUT            | 
+|enc_rounds      | t1/s7/out   | 256x8         | LUT            | 
+|enc_rounds      | t1/s6/out   | 256x8         | LUT            | 
+|enc_rounds      | t1/s5/out   | 256x8         | LUT            | 
+|enc_rounds      | t1/s4/out   | 256x8         | LUT            | 
+|enc_rounds      | t1/s3/out   | 256x8         | LUT            | 
+|enc_rounds      | t1/s2/out   | 256x8         | LUT            | 
+|enc_rounds      | t1/s1/out   | 256x8         | LUT            | 
+|enc_rounds      | t3/s1/out   | 256x8         | LUT            | 
+|enc_rounds      | t3/s2/out   | 256x8         | LUT            | 
+|enc_rounds      | t3/s3/out   | 256x8         | LUT            | 
+|enc_rounds      | t3/s4/out   | 256x8         | LUT            | 
+|enc_rounds      | t3/s5/out   | 256x8         | LUT            | 
+|enc_rounds      | t3/s6/out   | 256x8         | LUT            | 
+|enc_rounds      | t3/s7/out   | 256x8         | LUT            | 
+|enc_rounds      | t3/s8/out   | 256x8         | LUT            | 
+|enc_rounds      | t3/s9/out   | 256x8         | LUT            | 
+|enc_rounds      | t3/s11/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s12/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s13/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s14/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s15/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s20/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s21/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s22/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s23/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s24/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s25/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s26/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s27/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s28/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s29/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s30/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s31/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s32/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s33/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s34/out  | 256x8         | LUT            | 
+|enc_rounds      | t3/s35/out  | 256x8         | LUT            | 
+|enc_last_round  | t1/s16/out  | 256x8         | LUT            | 
+|enc_last_round  | t1/s14/out  | 256x8         | LUT            | 
+|enc_last_round  | t1/s13/out  | 256x8         | LUT            | 
+|enc_last_round  | t1/s12/out  | 256x8         | LUT            | 
+|enc_last_round  | t1/s11/out  | 256x8         | LUT            | 
+|enc_last_round  | t1/s10/out  | 256x8         | LUT            | 
+|enc_last_round  | t1/s9/out   | 256x8         | LUT            | 
+|enc_last_round  | t1/s8/out   | 256x8         | LUT            | 
+|enc_last_round  | t1/s7/out   | 256x8         | LUT            | 
+|enc_last_round  | t1/s6/out   | 256x8         | LUT            | 
+|enc_last_round  | t1/s5/out   | 256x8         | LUT            | 
+|enc_last_round  | t1/s4/out   | 256x8         | LUT            | 
+|enc_last_round  | t1/s3/out   | 256x8         | LUT            | 
+|enc_last_round  | t1/s2/out   | 256x8         | LUT            | 
+|enc_last_round  | t1/s1/out   | 256x8         | LUT            | 
+|enc_last_round  | t1/s0/out   | 256x8         | LUT            | 
+|dec_first_round | t1/si16/out | 256x8         | LUT            | 
+|dec_first_round | t1/si14/out | 256x8         | LUT            | 
+|dec_first_round | t1/si13/out | 256x8         | LUT            | 
+|dec_first_round | t1/si12/out | 256x8         | LUT            | 
+|dec_first_round | t1/si11/out | 256x8         | LUT            | 
+|dec_first_round | t1/si10/out | 256x8         | LUT            | 
+|dec_first_round | t1/si9/out  | 256x8         | LUT            | 
+|dec_first_round | t1/si8/out  | 256x8         | LUT            | 
+|dec_first_round | t1/si7/out  | 256x8         | LUT            | 
+|dec_first_round | t1/si6/out  | 256x8         | LUT            | 
+|dec_first_round | t1/si5/out  | 256x8         | LUT            | 
+|dec_first_round | t1/si4/out  | 256x8         | LUT            | 
+|dec_first_round | t1/si3/out  | 256x8         | LUT            | 
+|dec_first_round | t1/si2/out  | 256x8         | LUT            | 
+|dec_first_round | t1/si1/out  | 256x8         | LUT            | 
+|dec_first_round | t1/si0/out  | 256x8         | LUT            | 
+|subbytes_dec    | si16/out    | 256x8         | LUT            | 
+|subbytes_dec    | si14/out    | 256x8         | LUT            | 
+|subbytes_dec    | si13/out    | 256x8         | LUT            | 
+|subbytes_dec    | si12/out    | 256x8         | LUT            | 
+|subbytes_dec    | si11/out    | 256x8         | LUT            | 
+|subbytes_dec    | si10/out    | 256x8         | LUT            | 
+|subbytes_dec    | si9/out     | 256x8         | LUT            | 
+|subbytes_dec    | si8/out     | 256x8         | LUT            | 
+|subbytes_dec    | si7/out     | 256x8         | LUT            | 
+|subbytes_dec    | si6/out     | 256x8         | LUT            | 
+|subbytes_dec    | si5/out     | 256x8         | LUT            | 
+|subbytes_dec    | si4/out     | 256x8         | LUT            | 
+|subbytes_dec    | si3/out     | 256x8         | LUT            | 
+|subbytes_dec    | si2/out     | 256x8         | LUT            | 
+|subbytes_dec    | si1/out     | 256x8         | LUT            | 
+|subbytes_dec    | si0/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | n0/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | n3/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | n4/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | n5/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | n6/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | n7/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | n8/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | n9/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | n10/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | n11/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | n12/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | n13/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | n14/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | n16/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | o0/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | o1/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | o2/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | o3/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | o4/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | o5/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | o6/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | o7/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | o8/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | o9/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | o10/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | o11/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | o12/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | o13/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | o14/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | o16/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | s0/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | s1/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | s2/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | s4/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | s5/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | s6/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | s7/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | s8/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | s9/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | s10/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | s11/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | s12/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | s13/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | s14/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | s16/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | p0/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | p1/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | p2/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | p3/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | p4/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | p5/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | p6/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | p7/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | p8/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | p9/out      | 256x8         | LUT            | 
+|mixcolumn_dec   | p10/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | p11/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | p12/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | p13/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | p14/out     | 256x8         | LUT            | 
+|mixcolumn_dec   | p16/out     | 256x8         | LUT            | 
++----------------+-------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 792.637 ; gain = 530.699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 792.637 ; gain = 530.699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 792.637 ; gain = 530.699
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[127] with 1st driver pin 'buffer_reg[127]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[127] with 2nd driver pin 'buffer_reg[127]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin encrypt_done_OBUF with 1st driver pin 'encrypt_done_reg/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:164]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin encrypt_done_OBUF with 2nd driver pin 'encrypt_done_reg__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[126] with 1st driver pin 'buffer_reg[126]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[126] with 2nd driver pin 'buffer_reg[126]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[125] with 1st driver pin 'buffer_reg[125]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[125] with 2nd driver pin 'buffer_reg[125]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[124] with 1st driver pin 'buffer_reg[124]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[124] with 2nd driver pin 'buffer_reg[124]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[123] with 1st driver pin 'buffer_reg[123]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[123] with 2nd driver pin 'buffer_reg[123]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[122] with 1st driver pin 'buffer_reg[122]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[122] with 2nd driver pin 'buffer_reg[122]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[121] with 1st driver pin 'buffer_reg[121]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[121] with 2nd driver pin 'buffer_reg[121]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[120] with 1st driver pin 'buffer_reg[120]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[120] with 2nd driver pin 'buffer_reg[120]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[119] with 1st driver pin 'buffer_reg[119]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[119] with 2nd driver pin 'buffer_reg[119]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[118] with 1st driver pin 'buffer_reg[118]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[118] with 2nd driver pin 'buffer_reg[118]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[117] with 1st driver pin 'buffer_reg[117]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[117] with 2nd driver pin 'buffer_reg[117]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[116] with 1st driver pin 'buffer_reg[116]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[116] with 2nd driver pin 'buffer_reg[116]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[115] with 1st driver pin 'buffer_reg[115]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[115] with 2nd driver pin 'buffer_reg[115]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[114] with 1st driver pin 'buffer_reg[114]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[114] with 2nd driver pin 'buffer_reg[114]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[113] with 1st driver pin 'buffer_reg[113]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[113] with 2nd driver pin 'buffer_reg[113]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[112] with 1st driver pin 'buffer_reg[112]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[112] with 2nd driver pin 'buffer_reg[112]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[111] with 1st driver pin 'buffer_reg[111]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[111] with 2nd driver pin 'buffer_reg[111]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[110] with 1st driver pin 'buffer_reg[110]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[110] with 2nd driver pin 'buffer_reg[110]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[109] with 1st driver pin 'buffer_reg[109]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[109] with 2nd driver pin 'buffer_reg[109]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[108] with 1st driver pin 'buffer_reg[108]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[108] with 2nd driver pin 'buffer_reg[108]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[107] with 1st driver pin 'buffer_reg[107]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[107] with 2nd driver pin 'buffer_reg[107]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[106] with 1st driver pin 'buffer_reg[106]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[106] with 2nd driver pin 'buffer_reg[106]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[105] with 1st driver pin 'buffer_reg[105]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[105] with 2nd driver pin 'buffer_reg[105]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[104] with 1st driver pin 'buffer_reg[104]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[104] with 2nd driver pin 'buffer_reg[104]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[103] with 1st driver pin 'buffer_reg[103]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[103] with 2nd driver pin 'buffer_reg[103]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[102] with 1st driver pin 'buffer_reg[102]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[102] with 2nd driver pin 'buffer_reg[102]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[101] with 1st driver pin 'buffer_reg[101]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[101] with 2nd driver pin 'buffer_reg[101]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[100] with 1st driver pin 'buffer_reg[100]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[100] with 2nd driver pin 'buffer_reg[100]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[99] with 1st driver pin 'buffer_reg[99]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[99] with 2nd driver pin 'buffer_reg[99]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[98] with 1st driver pin 'buffer_reg[98]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[98] with 2nd driver pin 'buffer_reg[98]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[97] with 1st driver pin 'buffer_reg[97]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[97] with 2nd driver pin 'buffer_reg[97]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[96] with 1st driver pin 'buffer_reg[96]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[96] with 2nd driver pin 'buffer_reg[96]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[95] with 1st driver pin 'buffer_reg[95]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[95] with 2nd driver pin 'buffer_reg[95]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[94] with 1st driver pin 'buffer_reg[94]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[94] with 2nd driver pin 'buffer_reg[94]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[93] with 1st driver pin 'buffer_reg[93]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[93] with 2nd driver pin 'buffer_reg[93]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[92] with 1st driver pin 'buffer_reg[92]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[92] with 2nd driver pin 'buffer_reg[92]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[91] with 1st driver pin 'buffer_reg[91]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[91] with 2nd driver pin 'buffer_reg[91]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[90] with 1st driver pin 'buffer_reg[90]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[90] with 2nd driver pin 'buffer_reg[90]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[89] with 1st driver pin 'buffer_reg[89]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[89] with 2nd driver pin 'buffer_reg[89]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[88] with 1st driver pin 'buffer_reg[88]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[88] with 2nd driver pin 'buffer_reg[88]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[87] with 1st driver pin 'buffer_reg[87]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[87] with 2nd driver pin 'buffer_reg[87]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[86] with 1st driver pin 'buffer_reg[86]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[86] with 2nd driver pin 'buffer_reg[86]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[85] with 1st driver pin 'buffer_reg[85]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[85] with 2nd driver pin 'buffer_reg[85]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[84] with 1st driver pin 'buffer_reg[84]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[84] with 2nd driver pin 'buffer_reg[84]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[83] with 1st driver pin 'buffer_reg[83]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[83] with 2nd driver pin 'buffer_reg[83]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[82] with 1st driver pin 'buffer_reg[82]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[82] with 2nd driver pin 'buffer_reg[82]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[81] with 1st driver pin 'buffer_reg[81]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[81] with 2nd driver pin 'buffer_reg[81]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[80] with 1st driver pin 'buffer_reg[80]__0/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:92]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin buffer[80] with 2nd driver pin 'buffer_reg[80]/Q' [C:/Users/shrey/Desktop/AES_SV/AES_SV.srcs/sources_1/new/aes_main.v:165]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|      129|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 792.637 ; gain = 530.699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 792.637 ; gain = 530.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 792.637 ; gain = 530.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 792.637 ; gain = 530.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 792.637 ; gain = 530.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    11|
+|3     |LUT1   |     3|
+|4     |LUT2   |   249|
+|5     |LUT3   |   207|
+|6     |LUT4   |   243|
+|7     |LUT5   |   503|
+|8     |LUT6   |  2957|
+|9     |MUXF7  |   794|
+|10    |MUXF8  |   216|
+|11    |FDRE   |  2343|
+|12    |IBUF   |     9|
+|13    |OBUF   |    10|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------+----------------+------+
+|      |Instance   |Module          |Cells |
++------+-----------+----------------+------+
+|1     |top        |                |  7546|
+|2     |  k1       |key_expansion   |   216|
+|3     |    a1     |sbox            |    54|
+|4     |    a2     |sbox_92         |    54|
+|5     |    a3     |sbox_93         |    54|
+|6     |    a4     |sbox_94         |    54|
+|7     |  rd1      |dec_first_round |  1680|
+|8     |    t1     |subbytes_dec_75 |  1680|
+|9     |      si0  |sboxi_76        |   105|
+|10    |      si1  |sboxi_77        |   105|
+|11    |      si10 |sboxi_78        |   105|
+|12    |      si11 |sboxi_79        |   105|
+|13    |      si12 |sboxi_80        |   105|
+|14    |      si13 |sboxi_81        |   105|
+|15    |      si14 |sboxi_82        |   105|
+|16    |      si16 |sboxi_83        |   105|
+|17    |      si2  |sboxi_84        |   105|
+|18    |      si3  |sboxi_85        |   105|
+|19    |      si4  |sboxi_86        |   105|
+|20    |      si5  |sboxi_87        |   105|
+|21    |      si6  |sboxi_88        |   105|
+|22    |      si7  |sboxi_89        |   105|
+|23    |      si8  |sboxi_90        |   105|
+|24    |      si9  |sboxi_91        |   105|
+|25    |  rd10     |dec_rounds      |  1944|
+|26    |    t1     |subbytes_dec    |  1153|
+|27    |      si0  |sboxi           |    76|
+|28    |      si1  |sboxi_60        |    74|
+|29    |      si10 |sboxi_61        |    75|
+|30    |      si11 |sboxi_62        |    65|
+|31    |      si12 |sboxi_63        |    70|
+|32    |      si13 |sboxi_64        |    72|
+|33    |      si14 |sboxi_65        |    71|
+|34    |      si16 |sboxi_66        |    71|
+|35    |      si2  |sboxi_67        |    71|
+|36    |      si3  |sboxi_68        |    73|
+|37    |      si4  |sboxi_69        |    83|
+|38    |      si5  |sboxi_70        |    78|
+|39    |      si6  |sboxi_71        |    67|
+|40    |      si7  |sboxi_72        |    63|
+|41    |      si8  |sboxi_73        |    70|
+|42    |      si9  |sboxi_74        |    74|
+|43    |    t3     |mixcolumn_dec   |   479|
+|44    |      n0   |mul9_lut        |     1|
+|45    |      n1   |mul9_lut_0      |     1|
+|46    |      n10  |mul9_lut_1      |     1|
+|47    |      n11  |mul9_lut_2      |     1|
+|48    |      n12  |mul9_lut_3      |     1|
+|49    |      n13  |mul9_lut_4      |     1|
+|50    |      n14  |mul9_lut_5      |     1|
+|51    |      n16  |mul9_lut_6      |     1|
+|52    |      n2   |mul9_lut_7      |     1|
+|53    |      n3   |mul9_lut_8      |     1|
+|54    |      n4   |mul9_lut_9      |     2|
+|55    |      n5   |mul9_lut_10     |     1|
+|56    |      n6   |mul9_lut_11     |     1|
+|57    |      n7   |mul9_lut_12     |     1|
+|58    |      n8   |mul9_lut_13     |     1|
+|59    |      n9   |mul9_lut_14     |     1|
+|60    |      o0   |mul11_lut       |     7|
+|61    |      o1   |mul11_lut_15    |     7|
+|62    |      o10  |mul11_lut_16    |     7|
+|63    |      o11  |mul11_lut_17    |     7|
+|64    |      o12  |mul11_lut_18    |     7|
+|65    |      o13  |mul11_lut_19    |     7|
+|66    |      o14  |mul11_lut_20    |     7|
+|67    |      o16  |mul11_lut_21    |     7|
+|68    |      o2   |mul11_lut_22    |     7|
+|69    |      o3   |mul11_lut_23    |     7|
+|70    |      o4   |mul11_lut_24    |     5|
+|71    |      o5   |mul11_lut_25    |     7|
+|72    |      o6   |mul11_lut_26    |     7|
+|73    |      o7   |mul11_lut_27    |     7|
+|74    |      o8   |mul11_lut_28    |     7|
+|75    |      o9   |mul11_lut_29    |     7|
+|76    |      p0   |mul13_lut       |     3|
+|77    |      p1   |mul13_lut_30    |     3|
+|78    |      p10  |mul13_lut_31    |     3|
+|79    |      p11  |mul13_lut_32    |     3|
+|80    |      p12  |mul13_lut_33    |     3|
+|81    |      p13  |mul13_lut_34    |     3|
+|82    |      p14  |mul13_lut_35    |     3|
+|83    |      p16  |mul13_lut_36    |     3|
+|84    |      p2   |mul13_lut_37    |     3|
+|85    |      p3   |mul13_lut_38    |     3|
+|86    |      p4   |mul13_lut_39    |     3|
+|87    |      p5   |mul13_lut_40    |     4|
+|88    |      p6   |mul13_lut_41    |     3|
+|89    |      p7   |mul13_lut_42    |     3|
+|90    |      p8   |mul13_lut_43    |     3|
+|91    |      p9   |mul13_lut_44    |     3|
+|92    |      s0   |mul14_lut       |     5|
+|93    |      s1   |mul14_lut_45    |     5|
+|94    |      s10  |mul14_lut_46    |     5|
+|95    |      s11  |mul14_lut_47    |     5|
+|96    |      s12  |mul14_lut_48    |     5|
+|97    |      s13  |mul14_lut_49    |     5|
+|98    |      s14  |mul14_lut_50    |     5|
+|99    |      s16  |mul14_lut_51    |     5|
+|100   |      s2   |mul14_lut_52    |     5|
+|101   |      s3   |mul14_lut_53    |     5|
+|102   |      s4   |mul14_lut_54    |     5|
+|103   |      s5   |mul14_lut_55    |     5|
+|104   |      s6   |mul14_lut_56    |     5|
+|105   |      s7   |mul14_lut_57    |     4|
+|106   |      s8   |mul14_lut_58    |     5|
+|107   |      s9   |mul14_lut_59    |     5|
+|108   |  re10     |enc_last_round  |   673|
++------+-----------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 792.637 ; gain = 530.699
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 261 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 792.637 ; gain = 530.699
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 792.637 ; gain = 530.699
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1021 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 792.637 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+92 Infos, 17 Warnings, 101 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 792.637 ; gain = 539.250
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 792.637 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/shrey/Desktop/AES_SV/AES_SV.runs/synth_2/aes_main.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 21 18:57:59 2022...
